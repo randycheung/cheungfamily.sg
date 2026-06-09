@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Cheung Family | Giving Back</title>
+<title>The Cheung Family | Blessed to Be a Blessing</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -39,7 +39,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ─── NAV ─── */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -93,7 +92,6 @@ nav.scrolled {
 }
 .nav-links a:hover { color: var(--emerald); }
 
-/* ─── HERO ─── */
 .hero {
   min-height: 100vh;
   background: var(--white);
@@ -103,13 +101,11 @@ nav.scrolled {
   overflow: hidden;
   position: relative;
 }
-
 .hero-left {
   padding: 8rem 4rem 8rem 5rem;
   position: relative;
   z-index: 2;
 }
-
 .hero-right {
   position: relative;
   height: 100%;
@@ -129,7 +125,6 @@ nav.scrolled {
   inset: 0;
   background: linear-gradient(to right, white 0%, transparent 30%);
 }
-
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -152,7 +147,6 @@ nav.scrolled {
   background: var(--emerald);
   border-radius: 50%;
 }
-
 .hero-title {
   font-family: 'Playfair Display', serif;
   font-size: clamp(2.8rem, 5vw, 4.5rem);
@@ -164,11 +158,7 @@ nav.scrolled {
   transform: translateY(24px);
   animation: fadeUp 1s 0.4s ease forwards;
 }
-.hero-title em {
-  font-style: italic;
-  color: var(--emerald);
-}
-
+.hero-title em { font-style: italic; color: var(--emerald); }
 .hero-body {
   font-size: 1.05rem;
   color: var(--text-mid);
@@ -179,7 +169,6 @@ nav.scrolled {
   transform: translateY(16px);
   animation: fadeUp 0.9s 0.6s ease forwards;
 }
-
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -197,69 +186,6 @@ nav.scrolled {
   animation: fadeUp 0.9s 0.8s ease forwards;
 }
 .btn-primary:hover { background: var(--emerald-deep); transform: translateY(-1px); }
-.btn-arrow { font-size: 1rem; }
-
-.hero-stats {
-  display: flex;
-  gap: 2.5rem;
-  margin-top: 4rem;
-  padding-top: 2.5rem;
-  border-top: 1px solid var(--cream-border);
-  opacity: 0;
-  animation: fadeUp 0.9s 1s ease forwards;
-}
-.hero-stat .num {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--charcoal);
-  line-height: 1;
-  display: block;
-}
-.hero-stat .lbl {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  margin-top: 0.25rem;
-  display: block;
-  letter-spacing: 0.05em;
-}
-
-/* ─── SECTION BASE ─── */
-.section-wrap {
-  padding: 7rem 5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--emerald);
-  font-weight: 500;
-  margin-bottom: 1.25rem;
-}
-.eyebrow::before {
-  content: '';
-  display: block;
-  width: 24px; height: 1px;
-  background: var(--emerald);
-}
-
-.section-h {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 400;
-  line-height: 1.18;
-  color: var(--charcoal);
-  margin-bottom: 1rem;
-}
-.section-h em { font-style: italic; color: var(--emerald); }
-
-/* ─── ABOUT STRIP ─── */
 .about-strip {
   background: var(--white);
   padding: 7rem 5rem;
@@ -272,9 +198,7 @@ nav.scrolled {
   gap: 6rem;
   align-items: center;
 }
-.about-image-wrap {
-  position: relative;
-}
+.about-image-wrap { position: relative; }
 .about-image-wrap img {
   width: 100%;
   aspect-ratio: 4/5;
@@ -292,27 +216,52 @@ nav.scrolled {
   padding: 1.25rem 1.5rem;
   text-align: center;
 }
-.about-image-badge .big { 
+.about-image-badge .big {
   font-family: 'Playfair Display', serif;
-  font-size: 2.25rem; 
-  color: var(--gold); 
-  line-height: 1;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--gold);
+  line-height: 1.3;
   display: block;
 }
-.about-image-badge .small { 
-  font-size: 0.72rem; 
-  color: var(--text-muted); 
+.about-image-badge .small {
+  font-size: 0.72rem;
+  color: var(--text-muted);
   letter-spacing: 0.05em;
   display: block;
   margin-top: 0.2rem;
 }
-
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--emerald);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+.eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px; height: 1px;
+  background: var(--emerald);
+}
+.section-h {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  line-height: 1.18;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+.section-h em { font-style: italic; color: var(--emerald); }
 .about-text p {
   color: var(--text-mid);
   font-size: 1rem;
   margin-bottom: 1.25rem;
 }
-
 .values-row {
   display: flex;
   gap: 1rem;
@@ -329,22 +278,52 @@ nav.scrolled {
   letter-spacing: 0.04em;
 }
 
-/* ─── TIMELINE ─── */
-.timeline-bg {
+.pillars-section {
   background: var(--cream-warm);
   padding: 7rem 5rem;
 }
-.timeline-inner {
-  max-width: 900px;
-  margin: 0 auto;
+.pillars-inner { max-width: 1200px; margin: 0 auto; }
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3.5rem;
 }
-
-.timeline {
-  margin-top: 4rem;
+.pillar {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2.25rem 2rem;
+  border: 1px solid var(--cream-border);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.pillar.visible { opacity: 1; transform: translateY(0); }
+.pillar-icon {
+  width: 44px; height: 44px;
+  background: var(--emerald-pale);
+  border-radius: 10px;
   display: flex;
-  flex-direction: column;
-  gap: 0;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
 }
+.pillar-icon svg { width: 22px; height: 22px; stroke: var(--emerald); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pillar h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--charcoal);
+  margin-bottom: 0.65rem;
+}
+.pillar p { font-size: 0.9rem; color: var(--text-mid); line-height: 1.75; }
+
+.timeline-bg {
+  background: var(--white);
+  padding: 7rem 5rem;
+}
+.timeline-inner { max-width: 900px; margin: 0 auto; }
+.timeline { margin-top: 4rem; display: flex; flex-direction: column; }
 .tl-item {
   display: grid;
   grid-template-columns: 120px 1fr;
@@ -357,7 +336,6 @@ nav.scrolled {
 }
 .tl-item:last-child { border-bottom: none; }
 .tl-item.visible { opacity: 1; transform: translateY(0); }
-
 .tl-year-wrap { text-align: right; padding-top: 0.35rem; }
 .tl-year {
   font-family: 'Playfair Display', serif;
@@ -374,16 +352,6 @@ nav.scrolled {
   display: block;
   margin-top: 0.25rem;
 }
-
-.tl-dot-line {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 0.5rem;
-  width: 20px;
-  flex-shrink: 0;
-}
-
 .tl-content h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.35rem;
@@ -391,12 +359,7 @@ nav.scrolled {
   color: var(--charcoal);
   margin-bottom: 0.6rem;
 }
-.tl-content p {
-  font-size: 0.92rem;
-  color: var(--text-mid);
-  line-height: 1.8;
-}
-
+.tl-content p { font-size: 0.92rem; color: var(--text-mid); line-height: 1.8; }
 .tl-tag {
   display: inline-block;
   background: var(--emerald-pale);
@@ -409,16 +372,24 @@ nav.scrolled {
   border-radius: 50px;
   margin-bottom: 0.75rem;
 }
+.tl-tag-gold {
+  display: inline-block;
+  background: var(--gold-pale);
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.75rem;
+  border-radius: 50px;
+  margin-bottom: 0.75rem;
+}
 
-/* ─── INITIATIVE CARDS ─── */
 .cards-section {
-  background: var(--white);
+  background: var(--cream-warm);
   padding: 7rem 5rem;
 }
-.cards-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+.cards-inner { max-width: 1200px; margin: 0 auto; }
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -429,7 +400,6 @@ nav.scrolled {
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--cream-border);
-  transition: box-shadow 0.4s, transform 0.3s;
   background: var(--white);
   opacity: 0;
   transform: translateY(30px);
@@ -437,7 +407,6 @@ nav.scrolled {
 }
 .card.visible { opacity: 1; transform: translateY(0); }
 .card:hover { box-shadow: 0 12px 40px rgba(26,107,74,0.12); transform: translateY(-5px); }
-
 .card-img {
   height: 210px;
   overflow: hidden;
@@ -456,12 +425,23 @@ nav.scrolled {
   height: 60%;
   background: linear-gradient(to top, rgba(255,255,255,0.9), transparent);
 }
-
 .card-body { padding: 1.5rem 1.75rem; }
 .card-tag-pill {
   display: inline-block;
   background: var(--emerald-pale);
   color: var(--emerald);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.75rem;
+  border-radius: 50px;
+  margin-bottom: 0.85rem;
+}
+.card-tag-pill-gold {
+  display: inline-block;
+  background: var(--gold-pale);
+  color: var(--gold);
   font-size: 0.68rem;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -478,23 +458,14 @@ nav.scrolled {
   margin-bottom: 0.65rem;
   line-height: 1.3;
 }
-.card-body p {
-  font-size: 0.87rem;
-  color: var(--text-mid);
-  line-height: 1.75;
-}
-
+.card-body p { font-size: 0.87rem; color: var(--text-mid); line-height: 1.75; }
 .card-foot {
   padding: 1rem 1.75rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.card-year-lbl {
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  letter-spacing: 0.05em;
-}
+.card-year-lbl { font-size: 0.78rem; color: var(--text-muted); letter-spacing: 0.05em; }
 .card-cta {
   font-size: 0.78rem;
   font-weight: 500;
@@ -507,7 +478,6 @@ nav.scrolled {
 }
 .card:hover .card-cta { gap: 0.6rem; }
 
-/* ─── QUOTE ─── */
 .quote-section {
   background: var(--emerald);
   padding: 7rem 5rem;
@@ -545,7 +515,6 @@ blockquote {
   color: rgba(255,255,255,0.55);
 }
 
-/* ─── FOOTER ─── */
 footer {
   background: var(--charcoal);
   padding: 3.5rem 5rem;
@@ -575,24 +544,17 @@ footer {
   font-style: italic;
   font-family: 'Playfair Display', serif;
 }
-.footer-copy {
-  font-size: 0.78rem;
-  color: rgba(255,255,255,0.4);
-}
+.footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.4); }
 
-/* ─── ANIMATIONS ─── */
-@keyframes fadeUp {
-  to { opacity: 1; transform: translateY(0); }
-}
+@keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
 
-/* ─── RESPONSIVE ─── */
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
   .hero-right { display: none; }
   .hero-left { padding: 7rem 2rem 5rem; }
   .about-inner { grid-template-columns: 1fr; gap: 3rem; }
-  .cards-grid { grid-template-columns: 1fr; }
-  .section-wrap, .about-strip, .timeline-bg, .cards-section, .quote-section { padding: 5rem 1.75rem; }
+  .cards-grid, .pillars-grid { grid-template-columns: 1fr; }
+  .about-strip, .pillars-section, .timeline-bg, .cards-section, .quote-section { padding: 5rem 1.75rem; }
   nav { padding: 1rem 1.5rem; }
   .nav-links { display: none; }
   footer { padding: 2.5rem 1.75rem; flex-direction: column; align-items: flex-start; }
@@ -601,181 +563,201 @@ footer {
 </head>
 <body>
 
-<!-- NAV -->
 <nav id="nav">
   <a href="#" class="nav-logo">
     <span class="nav-logo-mark">C</span>
     Cheung Family
   </a>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
+    <li><a href="#about">Our Heart</a></li>
+    <li><a href="#pillars">What We Stand For</a></li>
     <li><a href="#giving">Our Giving</a></li>
     <li><a href="#initiatives">Initiatives</a></li>
-    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-left">
     <div class="hero-badge">
       <span class="hero-badge-dot"></span>
-      Cheung Family Foundation · Singapore
+      Cheung Family · Singapore
     </div>
     <h1 class="hero-title">
-      Giving that<br>
-      <em>grows</em> with<br>
-      every generation
+      Blessed to be<br>
+      <em>a blessing</em><br>
+      to others
     </h1>
     <p class="hero-body">
-      We invest in education, health, and community — not because it is expected of us, but because we believe every act of generosity plants a seed that outlasts us.
+      By the grace of Jesus Christ, we have been given much. We give not out of obligation but out of gratitude, in hope that those we bless will one day pay it forward for His glory.
     </p>
-    <a href="#giving" class="btn-primary">
-      Our giving journey
-      <span class="btn-arrow">↓</span>
+    <a href="#about" class="btn-primary">
+      Our story
+      <span>&#8595;</span>
     </a>
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <span class="num">2</span>
-        <span class="lbl">University scholarships</span>
-      </div>
-      <div class="hero-stat">
-        <span class="num">3+</span>
-        <span class="lbl">Charitable causes</span>
-      </div>
-      <div class="hero-stat">
-        <span class="num">∞</span>
-        <span class="lbl">Lives touched</span>
-      </div>
-    </div>
   </div>
   <div class="hero-right">
-    <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=1200&q=85&auto=format" alt="Family, community, togetherness">
+    <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=1200&q=85&auto=format" alt="Community and family">
   </div>
 </section>
 
-<!-- ABOUT -->
 <div class="about-strip" id="about">
   <div class="about-inner">
     <div class="about-image-wrap">
-      <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=85&auto=format" alt="Graduation — the joy of education">
+      <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=85&auto=format" alt="Graduation day">
       <div class="about-image-badge">
-        <span class="big">Est.</span>
-        <span class="small">Singapore</span>
+        <span class="big">Pay it<br>Forward</span>
+        <span class="small">Our guiding spirit</span>
       </div>
     </div>
     <div class="about-text">
-      <p class="eyebrow">Our Mission</p>
-      <h2 class="section-h">A family's commitment to <em>leaving things better</em></h2>
-      <p>The Cheung family believes in the compounding power of generosity. Like interest in a long-held investment, giving — done consistently and with intention — builds something far greater than any single gift.</p>
-      <p>Our philanthropic focus is education and childhood health: the two pillars that, more than any other, determine what a person can become. By funding scholarships at Singapore's leading universities and supporting children battling illness, we aim to widen the door of possibility for those who deserve it most.</p>
-      <p>We are grateful to be in a position to give, and we take that responsibility seriously.</p>
+      <p class="eyebrow">Our Heart</p>
+      <h2 class="section-h">From abundance,<br>we <em>give freely</em></h2>
+      <p>We are a family deeply grateful for the blessings we have received through the grace of Jesus Christ. We believe that those who are blessed are blessed for a reason: to be a blessing to others.</p>
+      <p>Our giving is rooted in a simple conviction: that levelling the playing field in education and healthcare is one of the most powerful things we can do for the next generation. We give in the hope that one day, those whose lives are changed will look back and pay it forward, creating an unbroken chain of generosity that outlasts us all.</p>
+      <p>Every dollar we commit is designed to be sustainable, impactful and measurable. Faithful stewardship means giving with intention, not just sentiment.</p>
       <div class="values-row">
+        <span class="value-pill">Faith</span>
         <span class="value-pill">Education</span>
         <span class="value-pill">Healthcare</span>
-        <span class="value-pill">Community</span>
-        <span class="value-pill">Singapore</span>
+        <span class="value-pill">Pay It Forward</span>
+        <span class="value-pill">Perpetual Impact</span>
       </div>
     </div>
   </div>
 </div>
 
-<!-- TIMELINE -->
+<div class="pillars-section" id="pillars">
+  <div class="pillars-inner">
+    <p class="eyebrow">What We Stand For</p>
+    <h2 class="section-h">Three pillars of <em>purposeful giving</em></h2>
+    <div class="pillars-grid">
+
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 3L2 9l10 6 10-6-10-6z"/><path d="M2 17l10 6 10-6"/><path d="M2 13l10 6 10-6"/></svg>
+        </div>
+        <h3>Level the Playing Field</h3>
+        <p>A child's potential should never be limited by what their parents can afford. We fund scholarships at Singapore's leading universities so that talent and character, not wealth, determine who gets a seat at the table.</p>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Sustainable and Measurable</h3>
+        <p>We believe in giving that compounds. Our charitable structures are designed to be enduring, not one-off gestures, but perpetual foundations that grow and give in equal measure, with impact we can see and steward responsibly.</p>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Pay It Forward</h3>
+        <p>Our deepest hope is that every person we help will one day look back and choose to do the same for someone else, not out of duty but out of gratitude and love. That is how grace multiplies, for the glory of Jesus Christ.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <div class="timeline-bg" id="giving">
   <div class="timeline-inner">
     <p class="eyebrow">A Journey of Giving</p>
     <h2 class="section-h">Our giving, <em>year by year</em></h2>
 
     <div class="timeline">
+
       <div class="tl-item">
         <div class="tl-year-wrap">
-          <span class="tl-year">∞</span>
-          <span class="tl-status">Ongoing</span>
+          <span class="tl-year">2024</span>
+          <span class="tl-status">One-off</span>
         </div>
         <div class="tl-content">
-          <div class="tl-tag">Healthcare · Children</div>
+          <div class="tl-tag-gold">Healthcare · One-off Donation</div>
           <h3>Children's Cancer Foundation</h3>
-          <p>We contribute regularly to Singapore's Children's Cancer Foundation, supporting the psychosocial care, education and financial assistance provided to children with cancer and their families. Because a diagnosis should never determine a child's future.</p>
+          <p>Children are blank sheets of paper with unlimited potential. The founder has a deep soft spot for them, believing that illness should never be the thing that writes their story for them. This donation to Singapore's Children's Cancer Foundation was given in the hope that even a modest contribution could alleviate some of the financial burden on families at their most vulnerable, and give a sick child one less thing standing between them and the life they deserve.</p>
         </div>
       </div>
+
       <div class="tl-item">
         <div class="tl-year-wrap">
           <span class="tl-year">2025</span>
-          <span class="tl-status">Active</span>
+          <span class="tl-status">Endowed</span>
         </div>
         <div class="tl-content">
           <div class="tl-tag">Education · SMU</div>
           <h3>Cheung Family Scholarship at SMU</h3>
-          <p>Established an endowed scholarship at Singapore Management University for students of academic merit and financial need. With MOE's matching grant, every dollar we give reaches further. Our hope is that recipients carry both the opportunity and the spirit of giving forward.</p>
+          <p>The founder is an SMU alumnus with a deep affection for the institution. In 2025, as the university celebrated its Silver Jubilee, he was honoured to plant a tree outside the School of Accountancy to mark the occasion. That tree, still growing on campus today, is more than a symbol of the anniversary. It is an image of what this scholarship stands for: something planted with intention, nourished with care, and left to grow for generations that follow. We look not only for academic excellence but for character, young people who will one day give back what they have received.</p>
         </div>
       </div>
+
       <div class="tl-item">
         <div class="tl-year-wrap">
           <span class="tl-year">2026</span>
-          <span class="tl-status">Active</span>
+          <span class="tl-status">Endowed</span>
         </div>
         <div class="tl-content">
           <div class="tl-tag">Education · NUS</div>
           <h3>Cheung Family Scholarship at NUS</h3>
-          <p>A second scholarship endowed at the National University of Singapore — widening our reach and deepening our commitment to higher education. NUS's global standing makes this an investment not just in a student, but in Singapore's place in the world.</p>
+          <p>The founder spent a semester at NUS and carries a lasting regard for what the institution makes possible. This endowed scholarship continues that story, empowering students from financially disadvantaged backgrounds to level the playing field and access a world-class education on equal footing with their peers. The hope is simple: that each recipient graduates not only with a degree, but with a conviction to one day extend the same opportunity to someone else.</p>
         </div>
       </div>
+
     </div>
   </div>
 </div>
 
-<!-- INITIATIVE CARDS -->
 <div class="cards-section" id="initiatives">
   <div class="cards-inner">
     <p class="eyebrow">Our Initiatives</p>
-    <h2 class="section-h">Where we <em>direct our giving</em></h2>
+    <h2 class="section-h">Where the <em>giving goes</em></h2>
     <div class="cards-grid">
 
       <div class="card">
         <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&q=80&auto=format" alt="SMU Singapore Management University">
+          <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80&auto=format" alt="University campus Singapore">
           <div class="card-img-overlay"></div>
         </div>
         <div class="card-body">
-          <span class="card-tag-pill">Education · Singapore</span>
-          <h3 class="card-title-h">Cheung Family Scholarship — SMU</h3>
-          <p>Supporting bright minds at Singapore Management University since 2025. Our scholarship goes to students who combine academic excellence with the drive to contribute back to their communities.</p>
+          <span class="card-tag-pill">Education · SMU</span>
+          <h3 class="card-title-h">Cheung Family Scholarship at SMU</h3>
+          <p>An endowed scholarship at the founder's alma mater, Singapore Management University. A tree planted at the School of Accountancy during SMU's Silver Jubilee stands as a living symbol of what this scholarship represents: roots laid deep, and growth that belongs to those who come after.</p>
         </div>
         <div class="card-foot">
-          <span class="card-year-lbl">Established 2025</span>
-          <a href="https://www.smu.edu.sg" target="_blank" class="card-cta">Learn more →</a>
+          <span class="card-year-lbl">Endowed 2025</span>
+          <a href="https://www.smu.edu.sg" target="_blank" class="card-cta">Learn more &#8594;</a>
         </div>
       </div>
 
       <div class="card">
         <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=800&q=80&auto=format" alt="NUS National University of Singapore">
+          <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=800&q=80&auto=format" alt="NUS National University of Singapore campus">
           <div class="card-img-overlay"></div>
         </div>
         <div class="card-body">
-          <span class="card-tag-pill">Education · Singapore</span>
-          <h3 class="card-title-h">Cheung Family Scholarship — NUS</h3>
-          <p>Our 2026 scholarship at NUS reflects our belief that Singapore's best university should be accessible to all who deserve it — regardless of financial background.</p>
+          <span class="card-tag-pill">Education · NUS</span>
+          <h3 class="card-title-h">Cheung Family Scholarship at NUS</h3>
+          <p>Rooted in the founder's own time at NUS, this scholarship exists to ensure that financial circumstance is never the reason a deserving student is held back. Every recipient is an investment in a future that pays forward.</p>
         </div>
         <div class="card-foot">
-          <span class="card-year-lbl">Established 2026</span>
-          <a href="https://www.nus.edu.sg" target="_blank" class="card-cta">Learn more →</a>
+          <span class="card-year-lbl">Endowed 2026</span>
+          <a href="https://www.nus.edu.sg" target="_blank" class="card-cta">Learn more &#8594;</a>
         </div>
       </div>
 
       <div class="card">
         <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=800&q=80&auto=format" alt="Children's healthcare and cancer support">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80&auto=format" alt="Child healthcare support">
           <div class="card-img-overlay"></div>
         </div>
         <div class="card-body">
-          <span class="card-tag-pill">Healthcare · Children</span>
+          <span class="card-tag-pill-gold">Healthcare · One-off</span>
           <h3 class="card-title-h">Children's Cancer Foundation</h3>
-          <p>Contributing to Singapore's CCF in their tireless work to provide financial, psychosocial and educational support to children with cancer and their families during the hardest days of their lives.</p>
+          <p>A one-off gift given from a place of deep compassion for children facing illness. Every child deserves a clean sheet. This donation to Singapore's CCF was made in the hope of giving some families a little more breathing room during the hardest season of their lives.</p>
         </div>
         <div class="card-foot">
-          <span class="card-year-lbl">Ongoing</span>
-          <a href="https://www.ccf.org.sg" target="_blank" class="card-cta">Learn more →</a>
+          <span class="card-year-lbl">2024 donation</span>
+          <a href="https://www.ccf.org.sg" target="_blank" class="card-cta">Learn more &#8594;</a>
         </div>
       </div>
 
@@ -783,17 +765,15 @@ footer {
   </div>
 </div>
 
-<!-- QUOTE -->
 <div class="quote-section">
   <div class="quote-inner">
     <blockquote>
-      "We give not to be remembered, but so those we help may one day remember what is possible."
+      "Let your light shine before others, that they may see your good deeds and glorify your Father in heaven."
     </blockquote>
-    <p class="q-attr">— The Cheung Family, Singapore</p>
+    <p class="q-attr">Matthew 5:16</p>
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer id="contact">
   <div class="footer-logo">
     <span class="footer-logo-mark">C</span>
@@ -804,13 +784,11 @@ footer {
 </footer>
 
 <script>
-/* Nav scroll */
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 60);
 }, { passive: true });
 
-/* Scroll reveal */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -826,6 +804,10 @@ document.querySelectorAll('.tl-item').forEach((el, i) => {
   observer.observe(el);
 });
 document.querySelectorAll('.card').forEach((el, i) => {
+  el.dataset.delay = i;
+  observer.observe(el);
+});
+document.querySelectorAll('.pillar').forEach((el, i) => {
   el.dataset.delay = i;
   observer.observe(el);
 });
